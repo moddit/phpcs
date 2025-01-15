@@ -1,8 +1,9 @@
 {
     "name": "moddit/phpcs",
-    "description": "Moddit php cs rules",
+    "description": "Moddit PHP CS Rules",
     "type": "phpcodesniffer-standard",
     "license": "MIT",
+    "version": "1.0.0",
     "authors": [
         {
             "name": "Tijmen de Jong",

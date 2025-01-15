@@ -9,7 +9,8 @@
             "email": "tijmen@moddit.nl"
         }
     ],
-    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "minimum-stability": "stable",
     "require-dev": {
         "dealerdirect/phpcodesniffer-composer-installer": "^1.0"
     },

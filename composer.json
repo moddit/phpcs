@@ -1,11 +1,7 @@
 {
     "name": "moddit/phpcs",
     "description": "Moddit php cs rules",
-    "autoload": {
-        "psr-4": {
-            "Moddit\\Phpcs\\": "src/"
-        }
-    },
+    "type": "project",
     "authors": [
         {
             "name": "Tijmen de Jong",
@@ -13,5 +9,20 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "scripts": {
+        "install-codestandards": [
+            "PHPCSStandards\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run"
+        ],
+        "post-install-cmd": [
+            "@install-codestandards"
+        ]
+    }
 }

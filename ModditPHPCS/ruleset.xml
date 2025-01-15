@@ -22,6 +22,7 @@
         <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine" />
         <exclude name="Generic.ControlStructures.InlineControlStructure.NotAllowed" />
         <exclude name="PSR12.Classes.ClassInstantiation.MissingParentheses" />
+        <exclude name="PSR2.Methods.FunctionCallSignature.SpaceBeforeOpenBracket" />
     </rule>
 
     <!-- Exclude squiz function comments on pipelines in api folder -->

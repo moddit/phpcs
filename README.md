@@ -75,6 +75,24 @@ Or fix all folder files configured in the ruleset of the project's phpcs.xml:
 phpcbf 
 ```
 
+## IDEA Extensions
+
+### Visual Studio Code
+
+To show `phpcs.xml` lint errors in Visual Studio Code, you can use the following extensions:
+
+- **PHP CodeSniffer**: This extension integrates PHP_CodeSniffer with Visual Studio Code. Including linting and error fixing based on `phpcs.xml`
+    ```bash
+    ext install shevaua.phpcs
+    ```
+
+### PhpStorm
+
+To show `phpcs.xml` lint errors in PhpStorm, you can configure the built-in PHP CodeSniffer integration:
+
+For more detailed instructions, refer to the [PhpStorm documentation](https://www.jetbrains.com/help/phpstorm/using-php-code-sniffer.html#configure-tool-options).
+
+
 ## Contributing
 
 Contributions are welcome! Please submit a pull request or open an issue to discuss any changes.

@@ -21,6 +21,7 @@
         }
     },
     "scripts": {
+        "post-package-install": "phpcs --config-set default_standard ModditPHPCS",
         "install-codestandards": [
             "PHPCSStandards\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run"
         ],

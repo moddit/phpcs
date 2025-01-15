@@ -1,7 +1,7 @@
 {
     "name": "moddit/phpcs",
     "description": "Moddit php cs rules",
-    "type": "project",
+    "type": "phpcodesniffer-standard",
     "license": "MIT",
     "authors": [
         {

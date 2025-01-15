@@ -1,0 +1,17 @@
+{
+    "name": "moddit/phpcs",
+    "description": "Moddit php cs rules",
+    "autoload": {
+        "psr-4": {
+            "Moddit\\Phpcs\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tijmen de Jong",
+            "email": "tijmen@moddit.nl"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

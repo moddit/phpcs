@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<ruleset name="PHPRuleset Moddit">
+    <!-- Description of rules -->
+    <description>Default PHP ruleset.</description>
+
+    <!-- Use colors in output -->
+    <arg name="colors"/>
+
+    <!-- Squiz rules for function commenting -->
+    <rule ref="Squiz.Commenting.FunctionComment">
+        <exclude name="Squiz.Commenting.FunctionComment.MissingParamComment" />
+        <exclude name="Squiz.Commenting.FunctionComment.MissingParamTag" />
+        <exclude name="Squiz.Commenting.FunctionComment.ParamCommentIndent" />
+        <exclude name="Squiz.Commenting.FunctionComment.ParamNameNoMatch" />
+        <exclude name="Squiz.Commenting.FunctionComment.MissingReturn" />
+        <exclude name="Squiz.Commenting.FunctionComment.EmptyThrows" />
+        <exclude name="Squiz.Commenting.FunctionComment.SpacingAfterParamName" />
+    </rule>
+
+    <!-- Standard rules for psr12 -->
+    <rule ref="PSR12">
+        <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine" />
+        <exclude name="Generic.ControlStructures.InlineControlStructure.NotAllowed" />
+        <exclude name="PSR12.Classes.ClassInstantiation.MissingParentheses" />
+    </rule>
+
+    <!-- Exclude squiz function comments on pipelines in api folder -->
+    <exclude name="Squiz.Commenting.FunctionComment.IncorrectParamVarName" />
+    <rule ref="Squiz.Commenting.FunctionComment.InvalidTypeHint">
+        <exclude-pattern>api/app/Pipelines/*</exclude-pattern>
+    </rule>
+    
+    <!-- Exclude function commenting scalartypehinting -->
+    <rule ref="Squiz.Commenting.FunctionComment.ScalarTypeHinting">
+        <severity>0</severity>
+    </rule>
+
+    <!-- Generic rules for line limits and absolute line limits lengths -->
+    <rule ref="Generic.Files.LineLength">
+        <properties>
+            <property name="lineLimit" value="800" />
+            <property name="absoluteLineLimit" value="800" />
+        </properties>
+    </rule>
+</ruleset>

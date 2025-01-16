@@ -3,7 +3,7 @@
     "description": "Moddit PHP CS Rules",
     "type": "phpcodesniffer-standard",
     "license": "MIT",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "authors": [
         {
             "name": "Tijmen de Jong",

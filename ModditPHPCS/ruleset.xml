@@ -23,6 +23,7 @@
         <exclude name="Generic.ControlStructures.InlineControlStructure.NotAllowed" />
         <exclude name="PSR12.Classes.ClassInstantiation.MissingParentheses" />
         <exclude name="PSR2.Methods.FunctionCallSignature.SpaceBeforeOpenBracket" />
+        <exclude name="PSR12.Traits.UseDeclaration.MultipleImport" />
     </rule>
 
     <!-- Exclude squiz function comments on pipelines in api folder -->

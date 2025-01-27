@@ -12,7 +12,7 @@
     ],
     "prefer-stable": true,
     "minimum-stability": "stable",
-    "require-dev": {
+    "require": {
         "dealerdirect/phpcodesniffer-composer-installer": "^1.0"
     },
     "config": {
